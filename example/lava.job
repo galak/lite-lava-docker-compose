@@ -1,5 +1,5 @@
 # Zephyr JOB definition for frdm-k64f
-device_type: 'frdm-k64f'
+device_type: 'lpcxpresso55s69'
 job_name: 'zephyr-upstream tests-subsys-logging-log_list-logging-log_list-zephyr'
 
 timeouts:
@@ -21,7 +21,7 @@ actions:
     to: tmpfs
     images:
         zephyr:
-          url: 'https://snapshots.linaro.org/components/kernel/zephyr/master/zephyr/frdm_k64f/3708/tests/subsys/logging/log_list/logging.log_list/zephyr/zephyr.bin'
+          url: 'file:///zephyr.bin'
 
 - boot:
     method: cmsis-dap
